@@ -1,7 +1,7 @@
 # *JARVIS* movie recommender system
 This is v0.1.
 
-*JARVIS* us an open-source, conversational movie recommender system which models users
+*JARVIS* is an open-source, conversational movie recommender system which models users
 ' preferences dynamically and supports user initiatives and multi-turn recommendations. 
 *JARVIS* equips with a scaleable structure for future amendments. 
 It facilities the standardized components. 
@@ -60,3 +60,10 @@ The main architecture is shown in the figure below. A multi-turn conversation is
 - Add the token of the new bot to the [Telegram Bot Token](jarvis/external_files/config/bot_token.yaml
 ) file as ``BOT_TOKEN: <<token>>``.
 
+## Running *JARVIS*
+Once the Telegram Bot token is added, execute the following commands to execute *JARVIS*
+
+       pip install pyyaml
+       pip install python-telegram-bot --upgrade
+       pip install wikipedia
+       python jarvis.py -c <path_to_config.yaml>
