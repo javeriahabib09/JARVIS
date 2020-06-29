@@ -61,7 +61,9 @@ The main architecture is shown in the figure below. A multi-turn conversation is
 ) file as ``BOT_TOKEN: <<token>>``.
 
 ## Running *JARVIS*
-Once the Telegram Bot token is added, execute the following commands to execute *JARVIS*
+Once the Telegram Bot token is added, follow these steps n the folder `jarvis`:
+- Create a folder named `conversation_history`. The conversational logs will be saved in this folder if allowed in the config file.
+- Execute the following commands to run *JARVIS*
 
        pip install pyyaml
        pip install python-telegram-bot --upgrade
