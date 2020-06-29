@@ -1,6 +1,6 @@
 .idea/
 __pycache__/
 jarvis/docs/*
-!jarvis/conversation_history/*
+jarvis/conversation_history/*
 jarvis/external_files/config/bot_token.yaml
 jarvis/external_files/data/slot_values.json
