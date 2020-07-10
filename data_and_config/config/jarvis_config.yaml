@@ -1,0 +1,22 @@
+---
+
+CONVERSATION_LOGS:
+    save: False
+    nlp: True
+    path: Reports/Conversations/text_conversation_analysis
+
+DATA:
+  ontology_path: data_and_config/data/movies_ontology.json
+  db_path: data_and_config/data/movies_dbase.db
+  slot_values_path: data_and_config/data/slot_values.json
+  
+NLU:
+  tag_words_slots: data_and_config/config/tag_words_slots.json
+  
+BOT: True
+
+BOT_TOKEN_PATH: data_and_config/config/bot_token.yaml
+
+BOT_HISTORY:
+    save: True
+    path: conversation_history/

@@ -46,7 +46,7 @@ def arg_parse(args=None):
 
     if len(argv) < 3:
         print('WARNING: Configuration file is not provided.')
-        config_file = r'external_files/config/jarvis_config.yaml'
+        config_file = r'data_and_config/config/jarvis_config.yaml'
         print(f'Default configuration file selected is \'{config_file}\'')
     else:
         config_file = argv[2]
@@ -62,6 +62,7 @@ def arg_parse(args=None):
         raise ValueError(f'Unknown file type {file_val.split(":")[-1]} for configuration file')
 
     if cfg_parser:
+        print(f'Configuration file "{config_file}" is loaded.')
         return cfg_parser, cfg_parser['BOT']
     else:
         raise ValueError('The configuration file does not contain the correct format.')

@@ -25,6 +25,7 @@ class ControllerTerminal(Controller):
         """
         agent = Agent(configuration)
         agent.initialize()
+        print('The components for the conversation are initialized successfully.')
         user_options = {}
         agent_response, user_options = agent.start_dialogue()
         print(f'AGENT: {agent_response}')

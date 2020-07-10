@@ -87,7 +87,7 @@ class DataLoader:
             if count % print_count == 0:
                 print(f'{int(100 * count / total_count)}% data is loaded.')
         if not self.slot_values_path:
-            self.slot_values_path = "external_files/data/slot_values.json"
+            self.slot_values_path = "data_and_config/data/slot_values.json"
         with open(self.slot_values_path, 'w') as slot_val_file:
             print(f"Writing loaded database to {self.slot_values_path}")
             json.dump(slot_values, slot_val_file, indent=4)

@@ -241,6 +241,8 @@ class ControllerBot(Controller):
         # SIGTERM or SIGABRT. This should be used most of the time, since
         # start_polling() is non-blocking and will stop the controller gracefully.
         updater.idle()
+        print('The components for the conversation are initialized successfully.')
+        print('The users can access JARVIS using Telegram.')
 
     def new_user(self, user_id):
         """ Checks if the users are new or they have already conversed with the system before.
