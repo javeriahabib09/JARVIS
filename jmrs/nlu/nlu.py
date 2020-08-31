@@ -1,4 +1,4 @@
-"""NLU (Natural Language Understander) is a main component of Dialogue Systems. NLU unterstands
+"""NLU (Natural Language Understander) is a main component of Dialogue Systems. NLU understands
 the user requirements and intents for the system to generate an appropriate response.
 """
 

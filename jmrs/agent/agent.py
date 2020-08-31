@@ -34,7 +34,7 @@ def _get_db(db_path):
     if os.path.isfile(db_path):
         return DataBase(db_path)
     else:
-        raise FileNotFoundError('Ontology file {} not found.'.format(db_path))
+        raise FileNotFoundError('Database file {} not found.'.format(db_path))
 
 
 class Agent:
@@ -65,7 +65,7 @@ class Agent:
         self.dialogue_manager = None
 
     def initialize(self, user_id=None):
-        """Initializes the components and set their values vasd on the configuration"""
+        """Initializes the components and set their values as on the configuration"""
         if 'CONVERSATION_LOGS' in self.config and self.config['CONVERSATION_LOGS']['save']:
             self.record = True
             self.recorder = DialogueRecorder(self.config['CONVERSATION_LOGS']['path'],
