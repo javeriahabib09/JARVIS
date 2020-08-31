@@ -2,5 +2,4 @@
 __pycache__/
 docs/*
 conversation_history/*
-data_and_config/config/bot_token.yaml
 data_and_config/data/slot_values.json

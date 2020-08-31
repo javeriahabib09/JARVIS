@@ -63,7 +63,7 @@ The main architecture is shown in the figure below. A multi-turn conversation is
 ) file as ``BOT_TOKEN: <<token>>``.
 
 ### Conversation History folder
-Create a folder named `conversation_history`. The conversational logs will be saved in this folder if allowed in the config file.
+Create a folder named `conversation_history`. The conversational logs will be saved in this folder if allowed in the config file. These logs will be created when the *JARVIS* is being executed on Telegram.
 
 ### Python Libraries
 - Execute the following commands to install necessary libraries for *JARVIS*
@@ -71,7 +71,15 @@ Create a folder named `conversation_history`. The conversational logs will be sa
        pip install pyyaml
        pip install python-telegram-bot --upgrade
        pip install wikipedia
+       pip install nltk
+       
+### nltk Resources
+       nltk.download('punkt')
+       nltk.download('wordnet')
+       nltk.download('stopwords')
 	   
 ## Running *JARVIS*
 
        python jarvis.py -c <path_to_config.yaml>
+       
+Note: To create Slot-Values, execute the code once by setting `BOT: False` n the configuration file.
